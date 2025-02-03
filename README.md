@@ -7,9 +7,8 @@
 ## Table of Contents
 1. [Objective](#objective)
 2. [Working Folder](#working-folder)
-3. [Project Overview](#project-overview)
-4. [Edit a DMN Diagram](#edit-a-dmn-diagram)
-5. [Using the Application](#using-the-application)
+3. [Edit a DMN Diagram](#edit-a-dmn-diagram)
+4. [Using the Application](#using-the-application)
 
 ---
 
