@@ -9,7 +9,7 @@
 2. [Working Folder](#working-folder)
 3. [Edit a DMN Diagram](#edit-a-dmn-diagram)
 4. [Using the Application](#using-the-application)
-5. [Tools and Extensions Used] (#tools-and-extensions-used)
+5. [Tools and Extensions Used](#tools-and-extensions-used)
 
 ---
 
