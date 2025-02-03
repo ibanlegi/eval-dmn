@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" id="definitions_1ir7kn9" name="AgeClassificationDecision" namespace="http://camunda.org/schema/1.0/dmn" exporter="dmn-js (https://demo.bpmn.io/dmn)" exporterVersion="15.0.0">
+  <decision id="decision_1mil6bo" name="AgeClassification">
+    <informationRequirement id="InformationRequirement_0sa0pj3">
+      <requiredInput href="#InputData_1wbw6pl" />
+    </informationRequirement>
+    <decisionTable id="decisionTable_0nm91o4">
+      <input id="input1" label="Age" biodi:width="192">
+        <inputExpression id="inputExpression1" typeRef="number">
+          <text>age</text>
+        </inputExpression>
+      </input>
+      <output id="output1" label="AgeClassification" name="AgeClassification" typeRef="string" />
+      <rule id="DecisionRule_1odzr09">
+        <inputEntry id="UnaryTests_17cfivk">
+          <text>&lt;13</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0213e1h">
+          <text>"Child"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_100084s">
+        <inputEntry id="UnaryTests_1mnexve">
+          <text>[13..65)</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0v3iq4g">
+          <text>"Adult"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_160a08t">
+        <inputEntry id="UnaryTests_12tl2nz">
+          <text>&gt;=65</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0k2dwai">
+          <text>"Senior"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <inputData id="InputData_1wbw6pl" name="Age" />
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="DMNDiagram_00ays8k">
+      <dmndi:DMNShape id="DMNShape_15zkmhf" dmnElementRef="decision_1mil6bo">
+        <dc:Bounds height="80" width="180" x="160" y="110" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_19yzol4" dmnElementRef="InputData_1wbw6pl">
+        <dc:Bounds height="45" width="125" x="187" y="297" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0nyqofe" dmnElementRef="InformationRequirement_0sa0pj3">
+        <di:waypoint x="250" y="297" />
+        <di:waypoint x="250" y="210" />
+        <di:waypoint x="250" y="190" />
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

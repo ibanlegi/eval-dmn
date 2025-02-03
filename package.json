@@ -1,0 +1,38 @@
+{
+  "name": "dmn_assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ts/main.js",
+  "scripts": {
+    "configuration": "tsc --showConfig",
+    "compilation": "tsc"
+  },
+  "author": "I. Leginyora",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.11",
+    "@types/expect": "^24.3.0",
+    "@types/luxon": "^3.3.7",
+    "@types/mocha": "^10.0.6",
+    "@types/moddle": "^5.0.3",
+    "@types/node": "^20.9.3",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "dmn-js": "^14.7.1",
+    "dmn-moddle": "^10.0.0",
+    "expect": "^29.7.0",
+    "feelin": "^3.0.0",
+    "fs": "^0.0.1-security",
+    "min-dash": "^3.0.0",
+    "moddle": "^5.0.1",
+    "moddle-xml": "^9.0.5",
+    "sweetalert2": "^9.17.4"
+  }
+}

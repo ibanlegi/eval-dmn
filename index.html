@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Évaluation DMN</title>
+  <link rel="icon" type="image/png" href="./pictures/favicon.png" />
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="node_modules/dmn-js/dist/assets/diagram-js.css">
+  <link rel="stylesheet" href="node_modules/dmn-js/dist/assets/dmn-js-shared.css">
+  <link rel="stylesheet" href="node_modules/dmn-js/dist/assets/dmn-js-drd.css">
+  <link rel="stylesheet" href="node_modules/dmn-js/dist/assets/dmn-js-decision-table.css">
+  <link rel="stylesheet" href="node_modules/dmn-js/dist/assets/dmn-js-decision-table-controls.css">
+  <link rel="stylesheet" href="node_modules/dmn-js/dist/assets/dmn-js-literal-expression.css">
+  <link rel="stylesheet" href="node_modules/dmn-js/dist/assets/dmn-font/css/dmn.css">
+</head>
+
+<body>
+  <div id="canvas"></div>
+  <div id="background-text">
+    <p>Aucune visualisation de diagramme DMS</p>
+  </div>
+
+  <div id="zonesFichiers">
+    <section id="zoneDMN">
+      <header>
+        <h6>Fichier (dmn) visualisé : </h6>
+        <h6 id="nameFileDMN">Aucun fichier</h6>
+      </header>
+      <input type="file" id="fileInput_DMN" lang="fr"/>
+      <footer>
+        <p>&#x1F6C8; Message : </p>
+        <p id="etatFileDMN"></p>
+      </footer>
+    </section>
+    <section id="btnConfig">
+      <button id="btnEvaluation">Evaluer</button>
+      <button id="btnClear">Effacer</button>
+    </section>
+    <section id="zoneJSON">
+      <header>
+        <h6>Fichier (json) :</h6>
+        <h6 id="nameFileJSON">Aucun fichier</h6>
+      </header>
+      <input type="file" id="fileInput_JSON" lang="fr"/>
+      <footer>
+        <p>	&#x1F6C8; Message : </p>
+        <p id="etatFileJSON"></p>
+      </footer>
+    </section>
+  </div>
+
+
+  <script src="./dist/bundle.js"></script>
+</body>
+
+</html>

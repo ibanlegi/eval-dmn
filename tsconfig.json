@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "outDir": "js",
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES6",
+    "esModuleInterop": true,
+    "typeRoots": ["./ts/types", "./node_modules/@types"],
+    "skipLibCheck": false
+  },
+  "paths": {
+    "dmn-js": ["node_modules/dmn-js"],
+    "dmn-moddle": ["node_modules/dmn-moddle"]
+  },
+  "include": [
+    "ts/*"
+  ]
+}

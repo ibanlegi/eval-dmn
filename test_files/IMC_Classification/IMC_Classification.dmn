@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" id="definitions_1fmxmzn" name="IMC_classification" namespace="http://camunda.org/schema/1.0/dmn" exporter="dmn-js (https://demo.bpmn.io/dmn)" exporterVersion="15.0.0">
+  <decision id="decision_1xolqk6" name="IMC_Classification">
+    <informationRequirement id="InformationRequirement_1h9yt3u">
+      <requiredInput href="#InputData_1d9rrbi" />
+    </informationRequirement>
+    <decisionTable id="decisionTable_06jy73i">
+      <input id="input1" label="valeurIMC">
+        <inputExpression id="inputExpression1" typeRef="number">
+          <text>valeurIMC</text>
+        </inputExpression>
+      </input>
+      <output id="output1" label="classification" name="classification" typeRef="string" biodi:width="248" />
+      <rule id="DecisionRule_0setvyk">
+        <inputEntry id="UnaryTests_1juzjsz">
+          <text>&lt;16.5</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_109jozb">
+          <text>"Maigreur extrême – dénutrition"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1xdf15a">
+        <inputEntry id="UnaryTests_1kfp93e">
+          <text>[16.5..18.5)</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0a90uk3">
+          <text>"Maigreur"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1w8qi6j">
+        <inputEntry id="UnaryTests_1m6xuu3">
+          <text>[18.5..25)</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ruj6wp">
+          <text>"Corpulence normale"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1694lp8">
+        <inputEntry id="UnaryTests_1lptd2v">
+          <text>[25..30)</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0xux7r4">
+          <text>"Surpoids ou pré-obésité"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_16j57eq">
+        <inputEntry id="UnaryTests_1l1gpo2">
+          <text>[30..35)</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_078itbw">
+          <text>"Obésité modérée (classe I)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0me4s4a">
+        <inputEntry id="UnaryTests_0aixppj">
+          <text>[35..40)</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_18fb9f4">
+          <text>"Obésité sévère (classe II)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1flpyl9">
+        <inputEntry id="UnaryTests_136qgs3">
+          <text>&gt;40</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00pvlno">
+          <text>"Obésité morbide (classe III)"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <inputData id="InputData_1d9rrbi" name="valeurIMC" />
+  <knowledgeSource id="KnowledgeSource_1bh7sps" name="IMC = Poids / Taille x Taille">
+    <authorityRequirement id="AuthorityRequirement_15k6z3s">
+      <requiredInput href="#InputData_1d9rrbi" />
+    </authorityRequirement>
+  </knowledgeSource>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="DMNDiagram_0m4ssnr">
+      <dmndi:DMNShape id="DMNShape_0m07ffs" dmnElementRef="decision_1xolqk6">
+        <dc:Bounds height="80" width="180" x="250" y="110" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_17osvpc" dmnElementRef="InputData_1d9rrbi">
+        <dc:Bounds height="45" width="125" x="157" y="257" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0fiybwf" dmnElementRef="InformationRequirement_1h9yt3u">
+        <di:waypoint x="220" y="257" />
+        <di:waypoint x="340" y="210" />
+        <di:waypoint x="340" y="190" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_0e8n3t0" dmnElementRef="KnowledgeSource_1bh7sps">
+        <dc:Bounds height="63" width="100" x="160" y="378" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0ssfq2u" dmnElementRef="AuthorityRequirement_15k6z3s">
+        <di:waypoint x="210" y="302" />
+        <di:waypoint x="210" y="378" />
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
