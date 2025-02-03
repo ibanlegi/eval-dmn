@@ -58,9 +58,9 @@ if ((age in <13)) then "Child" else if ((age in [13..65))) then "Adult" else if 
 ## Tools and Extensions Used
 This project relies on several tools and extensions that made the development process smoother and more efficient:
 
-- **[bpmn.io](https://demo.bpmn.io/dmn)** : An open-source web tool for editing DMN diagrams. For more details, see the [bpmn.io License](https://bpmn.io/license/)
-- **[FEEL (Friendly Enough Expression Language)](https://camunda.github.io/feel-scala/docs/reference)** : The language used to evaluate expressions in the DMN model. For more details, see the [feel-scala Licence](https://github.com/camunda/feel-scala/blob/main/LICENSE)
-- **[Webpack](https://webpack.js.org/)** : A popular JavaScript module bundler, used to bundle JavaScript files, manage dependencies, and optimize the assets of the project. Webpack is distributed under the **MIT License**. For more details, see the [Webpack License](https://webpack.js.org/license). 
+- **[bpmn.io](https://demo.bpmn.io/dmn)** : An open-source web tool for editing DMN diagrams. For more details, see the [bpmn.io License](https://bpmn.io/license/).
+- **[FEEL (Friendly Enough Expression Language)](https://camunda.github.io/feel-scala/docs/reference)** : The language used to evaluate expressions in the DMN model. For more details, see the [feel-scala Licence](https://github.com/camunda/feel-scala/blob/main/LICENSE).
+- **[Webpack](https://webpack.js.org/)** : A popular JavaScript module bundler, used to bundle JavaScript files, manage dependencies, and optimize the assets of the project. For more details, see the [Webpack License](https://webpack.js.org/license). 
 
 
 December 2023
