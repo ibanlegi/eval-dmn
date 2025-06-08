@@ -35,6 +35,13 @@ Create your test files in JSON format.
 
 ---
 
+## Project Overview
+
+The project can be viewed and tested by following the link below:  
+[**Evaluation DMN**](https://ileginyora.com/Projets/evalDmn/Projet/index.html)
+
+---
+
 ## Using the Application
 
 The project is ready to use, and all the files have been compiled correctly. You can try it directly by opening `index.html` and using the (`.dmn` and `.json`) files provided in the `./test_files` folder. Files that generate errors and allow for testing if they are correctly detected are also present.
