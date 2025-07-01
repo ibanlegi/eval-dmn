@@ -38,7 +38,7 @@ Create your test files in JSON format.
 ## Project Overview
 
 The project can be viewed and tested by following the link below:  
-[**Evaluation DMN**](https://ileginyora.com/Projets/evalDmn/Projet/index.html)
+[**Evaluation DMN**](https://ileginyora.com/projects/eval-dmn/project/index.html)
 
 ---
 
