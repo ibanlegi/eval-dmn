@@ -11,36 +11,26 @@
 4. [Using the Application](#using-the-application)
 5. [Tools and Extensions Used](#tools-and-extensions-used)
 
----
-
 > **Note** : The project documentation is written in French.
 
 ## Objective
 
 This project allows loading and visualizing DMN (Decision Model and Notation) files through a web interface. It supports the evaluation of rules defined in FEEL (Friendly Enough Expression Language) based on input JSON files.
 
----
-
 ## Working Folder
 
 A working folder has been created :
 - [Working Folder [PDF]](./Dossier_Projet.pdf)
-
----
 
 ## Edit a DMN Diagram
 
 You can edit your own diagrams via [bpmn.io](https://demo.bpmn.io/dmn).  
 Create your test files in JSON format.
 
----
-
 ## Project Overview
 
 The project can be viewed and tested by following the link below:  
 [**Evaluation DMN**](https://ileginyora.com/projects/eval-dmn/project/index.html)
-
----
 
 ## Using the Application
 
@@ -61,8 +51,6 @@ For example, for the AgeClassification table, the expression is :
 ```text
 if ((age in <13)) then "Child" else if ((age in [13..65))) then "Adult" else if ((age in >=65)) then "Senior" else "Error"
 ```
-
---- 
 
 ## Tools and Extensions Used
 This project relies on several tools and extensions that made the development process smoother and more efficient:
